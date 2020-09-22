@@ -1,0 +1,9 @@
+How it works
+In the Add-In's resource there are two byte arrays with the ID's of "MODXP" and "RESXP".  These byte arrays are extracted and written to files in the active project's path as modXP.bas and resXP.res.  Both files are then added to the active project's component collection enabling your project to adopt the XP theme.
+
+When adding components to the component collection they are usually from template files.  But  storing them as byte arrays in the resource safeguards against editing or deletion.  However I would not trust a byte array without seeing it first and I don't expect you to either.  You can preview the byte arrays by double clicking the respective icon before the files are created.
+
+Note
+When viewing the "RESXP" resource there are references to personal information such as company name etc.  They is no way to edit this and insert your own details from within the Add-In.  I don't think Windows can see this information when your project is compiled anyway as the manifest is integral to your compiled project, but I'm not 100%.
+
+I do not have excess to any other computers at the moment and cannot test this Add-In.  All I can say is that it works fine me (XP SP2).
